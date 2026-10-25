@@ -3,8 +3,7 @@
 **India + global markets | Free-first learning | Research, risk management and practical projects**
 
 > **Educational disclaimer:** This repository is for education and research only. It is not personalized investment, trading, legal or tax advice. No tool or strategy guarantees returns. Historical performance does not predict future results. Derivatives, leverage, short selling and cryptoassets can cause substantial or total loss. Paper-trading results may differ materially from live execution. Verify current laws, exchange rules, broker terms, data licenses and tax requirements before acting.
-
-**Last curated:** 2026-10-25  
+>   
 **Resource policy:** Free/open-source options are prioritized, but “free software” does not mean free market data, hosting, brokerage, exchange fees, or unrestricted use. Links and product availability can change; re-check official pages before relying on them.
 
 ## Table of Contents
@@ -834,7 +833,643 @@ This repository is educational, not personalized financial, investment, legal or
 
 ---
 
-# DEEP-DIVE EXPANSION — CHARTS, TECHNICAL ANALYSIS, FUNDAMENTALS, AND BOOKS
+# CHARTS, TECHNICAL ANALYSIS, FUNDAMENTALS, AND BOOKS
+
+
+CHARTS, TECHNICAL ANALYSIS & FUNDAMENTALS — RESEARCH DIRECTORY
+
+Format: numbered Markdown links with a short description, ready to paste into a code editor or notes file.
+
+Use educational resources to learn methods, then validate them on historical data. Chart patterns and indicators are probabilistic, not guarantees. Verify URLs, product availability, local rules, and current market data before relying on them.
+
+
+
+# CHART TYPES — WHAT EACH CHART IS FOR
+
+1. **Line chart** — Connects closing prices; useful for clean trend comparison, but hides intraperiod highs/lows.
+2. **OHLC/bar chart** — Shows open, high, low, close; useful for range and close-location analysis.
+3. **Candlestick chart** — Shows OHLC with candle body and wicks; useful for price action and candle patterns.
+4. **Area chart** — Filled closing-price line; useful for broad trend and relative-performance views.
+5. **Volume bar chart** — Shows traded quantity/volume per period; use to assess participation behind moves.
+6. **Volume Profile** — Displays volume by price level; use to locate high/low-volume areas and acceptance zones.
+7. **Market Profile / TPO** — Organizes time-at-price; use to study auction structure and value areas.
+8. **Point-and-Figure** — Filters time and plots price reversals; use for directional structure and objective breakout levels.
+9. **Renko** — Uses fixed price bricks rather than fixed time bars; use to simplify trends, while recognizing delayed signals.
+10. **Kagi** — Changes line direction after a reversal threshold; use to emphasize supply-demand shifts.
+11. **Three-Line Break** — Adds a new line only when price breaks prior lines; use to filter noise and detect trend changes.
+12. **Heikin-Ashi** — Averaged candles smooth price action; use for trend visualization, not exact execution prices.
+13. **Hollow candles** — Encodes open/close relationships with hollow/filled bodies; use for momentum context.
+14. **Baseline chart** — Shows movement relative to a selected baseline; useful for relative performance.
+15. **Logarithmic chart** — Equal vertical distances represent equal percentage changes; useful for long-term comparisons.
+16. **Linear chart** — Equal vertical distances represent equal absolute price changes; useful over narrow ranges.
+17. **Percent-change chart** — Normalizes performance from a start date; useful for comparing different-priced assets.
+18. **Relative-strength comparison chart** — Compares an asset with a benchmark; useful for leadership/laggard analysis.
+19. **Spread chart** — Plots price difference or ratio between instruments; useful for relative-value relationships.
+20. **Seasonality chart** — Aggregates performance by calendar period; use cautiously because samples can be small.
+21. **Intraday time chart** — Shows price by minute/second; useful for execution and intraday structure.
+22. **Tick chart** — Creates bars after a number of transactions; useful for activity-based intraday analysis.
+23. **Range bar chart** — Creates bars after a specified price range; useful for price movement without fixed time intervals.
+24. **Footprint chart** — Shows bid/ask volume at price; use to inspect order-flow imbalance where reliable data exists.
+25. **Delta chart** — Plots aggressive buy/sell volume difference; use as contextual order-flow evidence.
+26. **Cumulative Volume Delta (CVD)** — Accumulates bid/ask volume delta; use to compare aggressive flow with price, noting feed limitations.
+27. **DOM/order-book ladder** — Displays resting bids/asks; use to inspect liquidity, cancellations, and execution conditions.
+28. **Heatmap chart** — Colors liquidity/order-book levels over time; use to visualize changing displayed liquidity.
+29. **Open-interest chart** — Tracks outstanding derivative contracts; interpret with price and volume, not alone.
+30. **Funding-rate chart** — Shows perpetual-futures funding; use to assess positioning/carry, not as a standalone signal.
+31. **Liquidation chart** — Displays estimated forced liquidations; use to contextualize leverage events.
+32. **Options implied-volatility chart** — Plots implied volatility by time or strike; use for options pricing context.
+33. **Volatility smile/skew** — Plots implied volatility across strikes; use to assess relative pricing of puts/calls.
+34. **Volatility term structure** — Plots implied volatility across expiries; use to compare near- and long-dated risk pricing.
+35. **Yield curve** — Plots yields by maturity; use to assess rates, expectations, and curve shape.
+36. **Credit-spread chart** — Plots yield spread over a benchmark; use to monitor perceived credit risk.
+37. **Candlestick Renko hybrid** — Combines candle-derived data with brick-like filtering; platform definitions vary; verify methodology.
+38. **EquiVolume chart** — Varies box width with volume; use to compare price movement and trading activity.
+39. **CandleVolume chart** — Combines candle geometry with volume; use as an alternate volume-context display.
+40. **Arms CandleVolume chart** — Combines price candles and volume encoding; useful for visualizing participation.
+41. **Elder Impulse chart** — Colors bars using trend/momentum rules; use as a screening aid, not proof.
+42. **Regression channel** — Fits a central regression line and bands; use to inspect deviation and trend context.
+43. **Andrews' Pitchfork** — Uses three pivot points to create median-line channels; use for possible path/support zones.
+44. **Fibonacci retracement overlay** — Marks common retracement ratios; use as potential confluence zones, not exact turning points.
+45. **Fibonacci extension overlay** — Projects possible target zones beyond a swing; use with structure and risk controls.
+46. **Gann fan/grid** — Uses angle/time-price constructions; treat assumptions skeptically and test objectively.
+47. **Elliott Wave count** — Labels hypothesized impulse/corrective waves; scenario-dependent and prone to subjective counts.
+48. **Ichimoku chart** — Combines trend, momentum, and support/resistance components; interpret the full system.
+49. **Renko ATR chart** — Sets brick size using ATR; useful for volatility-adjusted filtering, but parameters affect results.
+50. **Kagi reversal chart** — Highlights reversals based on threshold rules; useful for trend-state visualization.
+51. **Market breadth chart** — Plots advancing/declining issues or related breadth measures; use to judge participation in index moves.
+52. **Advance-decline line** — Cumulative difference between advancing and declining securities; use as breadth confirmation.
+53. **New highs/new lows chart** — Tracks securities making new highs/lows; use to assess breadth and trend health.
+54. **Put/call ratio chart** — Plots put/call activity; sentiment measure requiring context and correct data definition.
+55. **Seasonal commodity chart** — Compares historical commodity behavior by calendar date; not a guarantee of repetition.
+56. **Relative rotation graph** — Plots relative strength and momentum against a benchmark; use for sector/asset rotation.
+57. **Heatmap/treemap** — Encodes groups by size and performance; use for market overview, not entry timing.
+58. **Scatter plot of returns** — Compares returns, risk, or factor exposure; use for correlation and portfolio analysis.
+59. **Correlation matrix/heatmap** — Shows pairwise correlations; use for diversification analysis, remembering correlations change.
+60. **Drawdown chart** — Plots peak-to-trough loss; use to understand strategy pain and recovery periods.
+61. **Equity curve** — Plots cumulative strategy value; use to inspect growth, drawdowns, and regime sensitivity.
+62. **Rolling volatility chart** — Shows volatility over a moving window; use to detect changing risk regimes.
+63. **Rolling beta chart** — Shows changing sensitivity to a benchmark; use for dynamic market exposure.
+64. **Event-study chart** — Aligns returns around events; use to inspect historical reactions without assuming causation.
+
+
+# CHART PATTERNS — NAMES AND COMMON USES
+
+Pattern interpretation depends on trend, timeframe, liquidity, instrument, and confirmation. A pattern name alone is not a trading signal.
+1. **Head and Shoulders** — Potential bearish reversal after an uptrend; neckline break is the usual confirmation.
+2. **Inverse Head and Shoulders** — Potential bullish reversal after a downtrend; neckline break is the usual confirmation.
+3. **Double Top** — Potential bearish reversal after repeated resistance rejection; confirm below the intervening swing low.
+4. **Double Bottom** — Potential bullish reversal after repeated support holds; confirm above the intervening swing high.
+5. **Triple Top** — Potential bearish reversal after three resistance tests; confirm on support breakdown.
+6. **Triple Bottom** — Potential bullish reversal after three support tests; confirm on resistance breakout.
+7. **Rounding Top** — Gradual loss of upside momentum; possible bearish transition if support breaks.
+8. **Rounding Bottom / Saucer** — Gradual base formation; possible bullish transition when resistance clears.
+9. **Cup and Handle** — Potential bullish continuation/base pattern; handle breakout is commonly watched.
+10. **Inverted Cup and Handle** — Potential bearish counterpart; breakdown confirmation matters.
+11. **Ascending Triangle** — Flat resistance with rising lows; often watched for bullish breakout, but can fail.
+12. **Descending Triangle** — Flat support with falling highs; often watched for bearish breakdown, but can fail.
+13. **Symmetrical Triangle** — Converging highs/lows; direction is uncertain until breakout.
+14. **Rising Wedge** — Converging rising boundaries; can warn of weakening upside or bearish breakdown.
+15. **Falling Wedge** — Converging falling boundaries; can precede upside reversal or continuation.
+16. **Bull Flag** — Sharp upward move followed by compact pullback; potential bullish continuation.
+17. **Bear Flag** — Sharp downward move followed by compact rebound; potential bearish continuation.
+18. **Bull Pennant** — Strong rise followed by small converging consolidation; potential continuation.
+19. **Bear Pennant** — Strong decline followed by small converging consolidation; potential continuation lower.
+20. **Rectangle / Trading Range** — Horizontal support and resistance; direction is unresolved until breakout.
+21. **Bullish Rectangle** — Range after an advance; upside break may indicate continuation.
+22. **Bearish Rectangle** — Range after a decline; downside break may indicate continuation.
+23. **Broadening Top** — Expanding swings near a high; signals instability and potential reversal, not certainty.
+24. **Broadening Bottom** — Expanding swings near a low; signals volatility and possible reversal.
+25. **Diamond Top** — Broadening then contracting structure near a high; possible bearish reversal.
+26. **Diamond Bottom** — Broadening then contracting structure near a low; possible bullish reversal.
+27. **Channel Up** — Parallel rising boundaries; identifies trend and potential pullback/extension zones.
+28. **Channel Down** — Parallel falling boundaries; identifies downtrend and potential bounce/resistance zones.
+29. **Horizontal Channel** — Sideways range; useful for range boundaries and breakout planning.
+30. **Trendline Break** — Break of a repeatedly tested trendline; warning signal needing price/volume context.
+31. **Breakout** — Price clears defined resistance/range; assess close, volume, retest, and false-break risk.
+32. **Breakdown** — Price falls below defined support/range; assess close, volume, retest, and squeeze risk.
+33. **False Breakout / Bull Trap** — Break above resistance fails and returns inside range; warns of trapped buyers.
+34. **False Breakdown / Bear Trap** — Break below support fails and returns inside range; warns of trapped sellers.
+35. **Gap Up** — Open materially above prior range; classify context and whether the gap holds or fills.
+36. **Gap Down** — Open materially below prior range; assess news, liquidity, and whether support fails.
+37. **Breakaway Gap** — Gap from a base/range; may mark start of a new move if confirmed.
+38. **Runaway / Measuring Gap** — Gap within a trend; may indicate continuation, but can also reflect news risk.
+39. **Exhaustion Gap** — Late-trend gap that quickly reverses may signal exhaustion; confirmation is essential.
+40. **Island Reversal** — Gap-separated cluster of prices that reverses direction; rare and data-sensitive.
+41. **V-Reversal** — Sharp reversal with little base; difficult to trade without confirmation.
+42. **Spike and Ledge** — Fast directional move followed by a narrow pause; potential continuation if pause breaks.
+43. **AB=CD Pattern** — Measured swing symmetry; used to identify potential completion zones, not certainty.
+44. **Gartley Pattern** — Fibonacci-based harmonic structure; requires exact pivot/ratio rules and confirmation.
+45. **Bat Pattern** — Harmonic pattern with defined retracement/extension ratios; potential reaction zone.
+46. **Butterfly Pattern** — Harmonic pattern extending beyond prior swing; potential reversal zone.
+47. **Crab Pattern** — Harmonic pattern with deep extension; potential reversal zone, high parameter sensitivity.
+48. **Shark Pattern** — Harmonic pattern based on specific swing ratios; confirm with clear rules.
+49. **Three Drives Pattern** — Three successive directional drives; may signal exhaustion at a completion zone.
+50. **Wolfe Wave** — Five-point structure projecting a possible target line; subjective and needs testing.
+51. **Quasimodo / Over-and-Under** — Swing-structure reversal concept; watch for break of structure and invalidation.
+52. **1-2-3 Reversal** — Three-swing structure suggesting a trend shift after a key pivot breaks.
+53. **Adam and Eve Double Bottom** — Sharp first trough and rounded second trough; variant of double-bottom structure.
+54. **Pipe Top / Pipe Bottom** — Two long opposing bars near an extreme; potential reversal, often timeframe-sensitive.
+55. **Inside Bar** — Current bar fits within prior bar range; consolidation and potential breakout setup.
+56. **Outside Bar** — Current bar exceeds prior bar high and low; expansion/volatility signal, direction depends on close.
+57. **NR4 / NR7** — Narrowest range over four/seven bars; volatility contraction that may precede expansion.
+58. **Opening Range Breakout** — Break of early-session high/low; intraday framework requiring liquidity and risk rules.
+59. **Bullish Engulfing** — Bullish candle body engulfs prior bearish body; stronger near support after decline.
+60. **Bearish Engulfing** — Bearish candle body engulfs prior bullish body; stronger near resistance after rise.
+61. **Hammer** — Small body near top with long lower wick; potential bullish rejection after decline.
+62. **Hanging Man** — Hammer-shaped candle after an advance; potential bearish warning, needs confirmation.
+63. **Inverted Hammer** — Long upper wick after decline; potential bullish reversal warning, needs confirmation.
+64. **Shooting Star** — Long upper wick after an advance; potential bearish rejection, needs confirmation.
+65. **Doji** — Open and close are close; indicates indecision, not a directional signal by itself.
+66. **Dragonfly Doji** — Long lower wick with close near open/high; potential rejection at support.
+67. **Gravestone Doji** — Long upper wick with close near open/low; potential rejection at resistance.
+68. **Long-Legged Doji** — Long wicks both sides; high indecision and two-sided volatility.
+69. **Spinning Top** — Small body and wicks; balance/indecision, interpreted in trend context.
+70. **Marubozu** — Little or no wick; strong directional candle within that period.
+71. **Bullish Harami** — Small bullish body inside prior bearish body; possible momentum slowdown/reversal.
+72. **Bearish Harami** — Small bearish body inside prior bullish body; possible momentum slowdown/reversal.
+73. **Piercing Line** — Bullish two-candle reversal candidate after decline; close pushes into prior bearish body.
+74. **Dark Cloud Cover** — Bearish two-candle reversal candidate after rise; close pushes into prior bullish body.
+75. **Morning Star** — Three-candle bullish reversal candidate after decline.
+76. **Evening Star** — Three-candle bearish reversal candidate after rise.
+77. **Morning Doji Star** — Morning-star variant with a doji middle candle.
+78. **Evening Doji Star** — Evening-star variant with a doji middle candle.
+79. **Three White Soldiers** — Three strong rising candles; potential bullish shift, but avoid chasing extended moves.
+80. **Three Black Crows** — Three strong falling candles; potential bearish shift, but check support and context.
+81. **Three Inside Up** — Harami-based bullish reversal confirmation pattern.
+82. **Three Inside Down** — Harami-based bearish reversal confirmation pattern.
+83. **Three Outside Up** — Engulfing-based bullish follow-through pattern.
+84. **Three Outside Down** — Engulfing-based bearish follow-through pattern.
+85. **Rising Three Methods** — Pause within an uptrend followed by renewed strength; potential continuation.
+86. **Falling Three Methods** — Pause within a downtrend followed by renewed weakness; potential continuation.
+87. **Tweezer Top** — Similar highs suggest resistance; potential bearish reversal when confirmed.
+88. **Tweezer Bottom** — Similar lows suggest support; potential bullish reversal when confirmed.
+89. **Kicker Pattern** — Abrupt candle-direction shift across a gap; strong sentiment change candidate.
+90. **Separating Lines** — Opposite-direction candle with similar opening price; possible continuation cue.
+91. **On-Neck Line** — Bearish continuation-style pattern; context and confirmation are important.
+92. **In-Neck Line** — Bearish continuation-style pattern; weak rebound fails to reclaim much prior body.
+93. **Thrusting Pattern** — Bearish continuation candidate when rebound penetrates but fails to recover prior body.
+94. **Belt Hold** — Long candle opening near an extreme; directional clue that needs location/context.
+95. **Rickshaw Man** — Long-legged doji variant; highlights indecision and volatility.
+96. **Takuri Line** — Very long lower shadow; potential rejection from lower prices.
+97. **Gap-and-Go** — Opening gap continues in direction of gap; execution and gap-fade risk matter.
+98. **Gap Fade** — Price reverses part/all of opening gap; requires session context and defined risk.
+99. **Pivot Breakout** — Break of a predefined pivot level; levels vary by calculation method.
+100. **Classic Pivot Support/Resistance** — Calculated daily/weekly levels used as reference zones, not guaranteed turning points.
+
+
+# TECHNICAL ANALYSIS — WHAT TO VIEW
+
+1. **Moving averages (SMA/EMA)** — Trend smoothing and dynamic reference levels; lagging and prone to whipsaws.
+2. **VWAP** — Volume-weighted average price; intraday execution benchmark, not universal support.
+3. **RSI** — Momentum oscillator; overbought/oversold readings can persist in strong trends.
+4. **MACD** — EMA-based momentum/trend indicator; lagging and sensitive to settings.
+5. **ADX / +DI / -DI** — Trend-strength and directional-movement measures; ADX itself is not direction.
+6. **Bollinger Bands** — Volatility bands around a moving average; a band touch is not automatically reversal.
+7. **ATR** — Average true range; estimates volatility for stops/position sizing, not direction.
+8. **Stochastic oscillator** — Compares close with recent range; can remain extreme in trends.
+9. **CCI** — Deviation from average price; useful as a normalized momentum measure, not standalone.
+10. **OBV** — Cumulative volume direction proxy; data quality and gap handling matter.
+11. **Money Flow Index** — Volume-weighted momentum oscillator; divergence is only a clue.
+12. **A/D line** — Volume-flow estimate based on close location in range; formula differs from accumulation/decline breadth.
+13. **Parabolic SAR** — Trend-following stop-and-reversal dots; whipsaws in sideways markets.
+14. **Ichimoku Cloud** — Trend, momentum, and support/resistance framework; needs coherent system rules.
+15. **Pivot points** — Calculated reference levels; crowded levels can fail and definitions vary.
+16. **Fibonacci retracement** — Potential retracement zones; not causal and often subjective.
+17. **Donchian Channels** — Highest high/lowest low over lookback; useful for breakout systems.
+18. **Keltner Channels** — ATR-based volatility channels; differs from standard-deviation bands.
+19. **Supertrend** — ATR-based trend overlay; parameter-dependent and can lag.
+20. **ROC / Momentum** — Rate of price change; compare across periods and assets carefully.
+21. **Relative strength vs benchmark** — Measures relative performance, not the RSI oscillator.
+22. **Advance/decline breadth** — Participation measure; index concentration can distort it.
+23. **Put/call ratio** — Options activity sentiment proxy; contract type and volume/open-interest basis matter.
+24. **Implied volatility** — Options market's volatility estimate, not a directional forecast.
+25. **Historical volatility** — Realized past price variation; not a forecast by itself.
+26. **Open interest** — Outstanding contracts; interpret with price, volume, expiry, and contract conventions.
+
+Practical chart-review order:
+1. Identify instrument, exchange, session, liquidity, and timeframe; check whether data are adjusted for splits/dividends.
+2. Start with market structure: higher highs/lows, lower highs/lows, range, or transition.
+3. Mark major support/resistance zones and prior swing highs/lows; treat them as zones, not exact lines.
+4. Check volume and, where relevant, open interest, breadth, volatility, and event/news calendar.
+5. Choose a small number of indicators with distinct jobs; avoid stacking redundant indicators.
+6. Write the setup, entry trigger, invalidation/stop, target logic, position size, fees, slippage, and risk/reward before entering.
+7. Test rules on out-of-sample data and different regimes; include realistic costs and avoid look-ahead/survivorship bias.
+8. Keep a journal and review expectancy, drawdown, win/loss size, exposure, and rule adherence.
+
+
+# FUNDAMENTALS — WHAT TO VIEW
+
+1. **Business model** — What is sold, to whom, how recurring revenue works, and what drives unit economics.
+2. **Industry structure** — Market size, growth, cyclicality, regulation, substitutes, and competitive intensity.
+3. **Competitive advantage / moat** — Brand, network effects, switching costs, scale, cost advantage, patents, or distribution.
+4. **Revenue growth** — Separate volume, price, mix, acquisitions, and one-off effects.
+5. **Gross margin** — Revenue less cost of goods/services; trend can reveal pricing power or input pressure.
+6. **Operating margin** — Operating profit relative to revenue; reflects core operating efficiency.
+7. **Net profit margin** — Net income relative to revenue; check tax, interest, and exceptional items.
+8. **EBITDA and EBIT** — Operating performance measures; reconcile adjustments and do not treat EBITDA as cash flow.
+9. **EPS** — Earnings per share; inspect diluted shares and one-off gains/losses.
+10. **Cash flow from operations** — Cash generated by operations; compare with reported earnings.
+11. **Free cash flow** — Often CFO minus capital expenditure; definition varies by provider.
+12. **Balance sheet** — Assets, liabilities, equity, liquidity, and financial resilience.
+13. **Debt and net debt** — Debt less cash where appropriate; examine maturities, currency, and covenants.
+14. **Interest coverage** — Ability to cover interest from operating earnings; definitions vary.
+15. **Debt-to-equity** — Leverage ratio; compare within sector and accounting context.
+16. **Working capital** — Current assets less current liabilities; study receivables, inventory, and payables.
+17. **Receivables days** — Receivable collection speed; rising days may warrant investigation.
+18. **Inventory days** — Inventory holding period; rising stock can signal weak demand or planned growth.
+19. **Payables days** — Supplier payment timing; increases may support cash flow but stress suppliers.
+20. **ROE** — Return on equity; assess leverage and buybacks behind the figure.
+21. **ROIC** — Return on invested capital; compare with cost of capital and business cycle.
+22. **ROA** — Return on assets; useful for asset-intensive business comparisons.
+23. **Capital expenditure** — Maintenance versus growth capex; assess future cash requirements.
+24. **Depreciation and amortization** — Accounting allocation of asset costs; compare with capex and asset life.
+25. **Goodwill and intangibles** — Review acquisitions, impairment risk, and assumptions.
+26. **Contingent liabilities** — Litigation, guarantees, tax disputes, and off-balance-sheet commitments.
+27. **Auditor opinion** — Read qualifications, emphasis-of-matter paragraphs, and auditor changes.
+28. **Related-party transactions** — Assess terms, conflicts, balances, and whether transactions are material.
+29. **Promoter/founder ownership** — Track ownership, pledging, insider sales, and changes over time.
+30. **Institutional ownership** — Review FII/DII/fund ownership as context, not a buy signal.
+31. **Share dilution** — ESOPs, warrants, convertibles, and equity issuance can dilute per-share value.
+32. **Buybacks and dividends** — Assess capital allocation, sustainability, and balance-sheet effects.
+33. **P/E ratio** — Price relative to earnings; compare with growth, risk, and sector peers.
+34. **Price-to-book** — Price relative to book equity; more useful for some financial/asset-heavy sectors.
+35. **Price-to-sales** — Price relative to sales; useful when earnings are low/negative, but ignores margins.
+36. **EV/EBITDA** — Enterprise value relative to EBITDA; check leases, debt, and capital intensity.
+37. **PEG ratio** — P/E relative to expected growth; highly sensitive to growth estimates.
+38. **Dividend yield and payout** — Dividend relative to price and earnings/cash flow; high yield can be a warning.
+39. **DCF valuation** — Discount forecast free cash flows; highly sensitive to assumptions and terminal value.
+40. **Comparable-company valuation** — Compare relevant peers with consistent definitions and business mix.
+41. **Sum-of-the-parts** — Values business segments separately when one multiple is misleading.
+42. **Management guidance** — Compare statements with delivered results and past guidance accuracy.
+43. **Earnings call** — Look for quantified drivers, changed assumptions, and evasive answers.
+44. **Quarterly results** — Compare sequentially and year-over-year; account for seasonality.
+45. **Annual report** — Read business overview, risk factors, MD&A, statements, and notes.
+46. **Cash conversion** — Compare cash flow with profit over multiple years.
+47. **Cyclicality** — Normalize earnings through full business cycles rather than peak-year multiples.
+48. **Macro sensitivity** — Interest rates, inflation, FX, commodity prices, and credit availability.
+49. **Currency exposure** — Foreign-currency revenue, costs, debt, and hedging.
+50. **Customer concentration** — Dependence on a few customers or contracts.
+51. **Supplier concentration** — Dependence on scarce inputs or a small supplier base.
+52. **Regulatory exposure** — Licences, compliance, litigation, policy changes, and penalties.
+53. **ESG/material risks** — Assess financially material environmental, social, governance, and transition risks.
+54. **IPO offer document** — Read use of proceeds, risk factors, promoter history, dilution, and related-party dealings.
+55. **Mutual fund fundamentals** — Expense ratio, tracking error, portfolio overlap, turnover, mandate, and risk.
+56. **ETF fundamentals** — Index methodology, liquidity, spread, tracking difference, and costs.
+57. **Bond fundamentals** — Yield, duration, credit quality, covenants, liquidity, and reinvestment risk.
+58. **REIT/InvIT fundamentals** — Cash distribution, leverage, occupancy/asset quality, sponsor, and debt maturities.
+59. **Crypto/token fundamentals** — Token utility, supply/unlocks, governance, protocol fees, security, concentration, and custody risk.
+
+
+# CHARTS
+
+1. [TradingView](https://www.tradingview.com/) — Interactive charts for equities, indices, futures, forex, and crypto.
+2. [StockCharts ChartSchool](https://chartschool.stockcharts.com/) — Chart types, indicators, patterns, and chart-reading lessons.
+3. [CME Group Education](https://www.cmegroup.com/education.html) — Futures-market charts, market structure, and technical-analysis education.
+4. [NSE India](https://www.nseindia.com/) — Indian exchange prices, indices, market statistics, and reports.
+5. [BSE India](https://www.bseindia.com/) — Indian equity-market data, indices, and corporate information.
+6. [Nifty Indices](https://www.niftyindices.com/) — Nifty index factsheets, historical data, and index methodology.
+7. [Investing.com Charts](https://www.investing.com/charts/) — Charts across global asset classes and economic markets.
+8. [Yahoo Finance](https://finance.yahoo.com/) — Historical prices, comparison charts, and market data.
+9. [Google Finance](https://www.google.com/finance/) — Quick price charts and comparisons for listed securities.
+10. [Koyfin](https://www.koyfin.com/) — Multi-asset charts, macro dashboards, and company comparisons.
+11. [Barchart](https://www.barchart.com/) — Stocks, futures, options, technical signals, and charting.
+12. [StockCharts](https://stockcharts.com/) — Technical charting, scans, and market breadth tools.
+13. [TrendSpider](https://trendspider.com/) — Automated trendlines, multi-timeframe charts, and pattern tools.
+14. [GoCharting](https://gocharting.com/) — Advanced charting for Indian markets, derivatives, and order flow.
+15. [Dhan Charts](https://dhan.co/) — Indian-market charts and trading interface.
+16. [Zerodha Kite](https://kite.zerodha.com/) — Broker charts and market monitoring for Indian instruments.
+17. [Upstox](https://upstox.com/) — Indian-market platform with charts and instrument data.
+18. [Angel One](https://www.angelone.in/) — Indian-market charts, quotes, and trading tools.
+19. [Fyers](https://fyers.in/) — Indian-market charting platform and technical tools.
+20. [Motilal Oswal](https://www.motilaloswal.com/) — Indian market data, charts, and research.
+21. [Moneycontrol Markets](https://www.moneycontrol.com/markets/) — Indian and global market quotes, charts, and news.
+22. [Economic Times Markets](https://economictimes.indiatimes.com/markets) — Indian market coverage, prices, and chart-linked securities.
+23. [MarketWatch](https://www.marketwatch.com/) — Global market prices, index charts, and market context.
+24. [Nasdaq Markets](https://www.nasdaq.com/market-activity) — US-listed securities, indices, quotes, and historical data.
+25. [NYSE Markets](https://www.nyse.com/markets) — US exchange market information and listed-market resources.
+26. [Cboe Global Markets](https://www.cboe.com/) — Options, volatility indices, exchange data, and market resources.
+27. [Cboe DataShop](https://datashop.cboe.com/) — Options and volatility-related historical data products.
+28. [Stooq](https://stooq.com/) — Historical market data and downloadable price series.
+29. [Alpha Vantage](https://www.alphavantage.co/) — APIs for time series, technical indicators, and market data.
+30. [Nasdaq Data Link](https://data.nasdaq.com/) — Financial and economic datasets for charting and analysis.
+31. [FRED](https://fred.stlouisfed.org/) — Macroeconomic time series for charts and economic context.
+32. [World Bank Data](https://data.worldbank.org/) — Long-run country and global economic indicators.
+33. [IMF Data](https://www.imf.org/en/Data) — International economic, financial, and country datasets.
+34. [Our World in Data](https://ourworldindata.org/) — Visual datasets and long-run economic and social trends.
+35. [Trading Economics](https://tradingeconomics.com/) — Economic indicators, releases, calendars, and charts.
+36. [MarketScreener](https://www.marketscreener.com/) — Company quotes, financial charts, and global market pages.
+37. [Finviz](https://finviz.com/) — US stock charts, heatmaps, screeners, and sector visualization.
+38. [Benzinga](https://www.benzinga.com/) — Market dashboards, news, and trading data.
+39. [StockAnalysis.com](https://stockanalysis.com/) — Price history, financial charts, and company data.
+40. [Macrotrends](https://www.macrotrends.net/) — Long-term stock-price and financial-history charts.
+41. [CompaniesMarketCap](https://companiesmarketcap.com/) — Market-cap rankings and historical company comparisons.
+42. [CoinMarketCap](https://coinmarketcap.com/) — Crypto prices, market capitalization, dominance, and charts.
+43. [CoinGecko](https://www.coingecko.com/) — Crypto market charts, token data, and market comparisons.
+44. [TradingView Crypto](https://www.tradingview.com/markets/cryptocurrencies/) — Crypto charts, pairs, indicators, and community analysis.
+45. [CoinGlass](https://www.coinglass.com/) — Crypto derivatives charts, open interest, funding, and liquidations.
+46. [Glassnode](https://glassnode.com/) — On-chain crypto metrics and market-cycle charts.
+47. [CryptoQuant](https://cryptoquant.com/) — On-chain, exchange-flow, and derivatives dashboards.
+48. [DefiLlama](https://defillama.com/) — DeFi total value locked, fees, yields, and protocol charts.
+49. [Dune](https://dune.com/) — Community-built blockchain dashboards and queryable charts.
+50. [Etherscan Charts](https://etherscan.io/charts) — Ethereum network and on-chain activity charts.
+51. [Blockchain.com Charts](https://www.blockchain.com/explorer/charts) — Bitcoin and blockchain-network historical charts.
+52. [Kaggle Datasets](https://www.kaggle.com/datasets) — Practice datasets for plotting and quantitative chart projects.
+53. [Python Matplotlib](https://matplotlib.org/) — Build custom financial and statistical charts in Python.
+54. [Plotly Python](https://plotly.com/python/) — Interactive charts and dashboards for market data.
+55. [Bokeh](https://bokeh.org/) — Interactive browser-based data visualization in Python.
+56. [Observable](https://observablehq.com/) — Interactive data visualizations and chart examples.
+57. [Apache ECharts](https://echarts.apache.org/) — Interactive charting library for custom dashboards.
+58. [Highcharts Stock](https://www.highcharts.com/products/stock/) — Financial time-series charts for web applications.
+59. [Lightweight Charts](https://www.tradingview.com/lightweight-charts/) — Open-source interactive financial charts for web projects.
+60. [QuantConnect Research](https://www.quantconnect.com/docs/v2/research-environment) — Research notebooks and charting for quantitative strategies.
+
+
+ ## TECHNICAL ANALYSIS
+1. [SEBI Investor Education: Technical vs Fundamental Analysis](https://investor.sebi.gov.in/tech_fund_analysis.html) — India-focused explanation of technical and fundamental analysis.
+2. [NISM Technical Analysis for Beginners](https://online.nism.ac.in/module/Technical%20Analysis%20for%20Beginners.html) — Structured course covering charts, price action, patterns, gaps, and risk.
+3. [Zerodha Varsity](https://zerodha.com/varsity/) — Free lessons on chart types, candlesticks, indicators, and trading.
+4. [TradingView Chart Patterns](https://www.tradingview.com/support/solutions/43000759289-how-to-read-chart-patterns/) — How reversal, continuation, and neutral chart patterns are interpreted.
+5. [StockCharts Chart Analysis](https://chartschool.stockcharts.com/table-of-contents/chart-analysis) — Detailed chart patterns, indicators, overlays, and chart types.
+6. [CME Group Technical Analysis](https://www.cmegroup.com/education/courses/trading-and-analysis/technical-analysis) — Price charts, trends, volume, and technical-analysis principles.
+7. [Fidelity Technical Analysis](https://www.fidelity.com/learning-center/trading-investing/technical-analysis/using-technical-analysis) — Trend, support/resistance, indicators, and chart-reading basics.
+8. [Charles Schwab Chart Patterns](https://www.schwab.com/learn/story/how-to-read-stock-charts-and-trading-patterns) — Reading charts and interpreting common patterns.
+9. [Cboe Options Institute](https://www.cboe.com/optionsinstitute/) — Options education, volatility, and derivatives concepts.
+10. [Investopedia Technical Analysis](https://www.investopedia.com/technical-analysis-4689657) — Definitions and explanations of indicators and chart concepts.
+11. [Corporate Finance Institute Technical Analysis](https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/technical-analysis/) — Technical-analysis foundations and terminology.
+12. [Babypips School of Pipsology](https://www.babypips.com/learn/forex) — Forex market foundations, charting, and trading concepts.
+13. [DailyFX Education](https://www.dailyfx.com/education) — Forex technical analysis and trading education.
+14. [IG Academy](https://www.ig.com/en/learn-to-trade/ig-academy) — Trading lessons, chart patterns, risk, and market analysis.
+15. [CMC Markets Learn](https://www.cmcmarkets.com/en/learn) — Chart patterns, indicators, and technical-trading concepts.
+16. [Admirals Education](https://admiralmarkets.com/education) — Technical indicators, patterns, and risk-management lessons.
+17. [FXStreet Education](https://www.fxstreet.com/education) — Forex technical concepts, market analysis, and indicators.
+18. [OANDA Learn](https://www.oanda.com/) — Forex education and market-analysis tools.
+19. [Schwab Learning Center](https://www.schwab.com/learn) — Trading, chart-reading, and risk-management articles.
+20. [StockCharts Candlestick Patterns](https://chartschool.stockcharts.com/table-of-contents/chart-analysis/candlestick-patterns) — Candlestick pattern descriptions and context.
+21. [StockCharts Indicators](https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays) — Indicator definitions, calculations, and applications.
+22. [StockCharts Chart Patterns](https://chartschool.stockcharts.com/table-of-contents/chart-analysis/introduction-to-chart-patterns) — Pattern structure, confirmation, and interpretation.
+23. [NSE Academy](https://www.nseacademy.com/) — Capital-market learning programs and technical-analysis courses.
+24. [NCFM India](https://www.ncfm-india.com/) — Market education modules, including patterns and technical indicators.
+25. [BSE Institute](https://www.bsebti.com/) — Capital-market education and market-analysis courses.
+26. [MarketLife](https://marketlife.com/) — Market profile, auction-market theory, and trading education.
+27. [Axia Futures](https://axiafutures.com/) — Order-flow and futures-trading education.
+28. [Bookmap Education](https://bookmap.com/learning-center) — Order-book liquidity visualization and order-flow concepts.
+29. [Sierra Chart Documentation](https://www.sierrachart.com/index.php?page=doc/) — Advanced charting, studies, market depth, and volume analysis.
+30. [NinjaTrader Education](https://ninjatrader.com/learn/) — Futures charting, indicators, and strategy concepts.
+31. [MetaTrader 5 Help](https://www.metatrader5.com/en/terminal/help) — Chart types, indicators, objects, and trading-platform features.
+32. [MetaTrader 5 CodeBase](https://www.mql5.com/en/code) — Community indicators, scripts, and automated-trading examples.
+33. [MQL5 Articles](https://www.mql5.com/en/articles) — Technical indicators, quantitative analysis, and algorithmic strategy articles.
+34. [Thinkorswim Learning Center](https://tlc.thinkorswim.com/) — Chart studies, scans, options, and platform analysis.
+35. [Interactive Brokers Traders' Academy](https://www.interactivebrokers.com/campus/traders-academy/) — Market mechanics, technical tools, derivatives, and trading education.
+36. [QuantConnect Documentation](https://www.quantconnect.com/docs/v2) — Systematic strategy research, indicators, backtesting, and execution.
+37. [Backtrader Documentation](https://www.backtrader.com/docu/) — Python strategy backtesting and technical indicators.
+38. [VectorBT Documentation](https://vectorbt.dev/) — Vectorized research, indicators, and systematic strategy testing.
+39. [TA-Lib Documentation](https://ta-lib.org/) — Technical-indicator library and supported calculations.
+40. [pandas-ta Documentation](https://github.com/xgboosted/pandas-ta-classic) — Python technical indicators for research workflows.
+41. [Tulip Indicators](https://tulipindicators.org/) — Technical-analysis indicator library and definitions.
+42. [Technical Analysis Library in Python](https://technical-analysis-library-in-python.readthedocs.io/) — Python indicator calculations for market time series.
+43. [QuantStart](https://www.quantstart.com/) — Quantitative trading, backtesting, and market-data tutorials.
+44. [Robot Wealth](https://robotwealth.com/) — Systematic trading research, statistics, and strategy design.
+45. [Alpha Architect](https://alphaarchitect.com/) — Evidence-based investing and factor research.
+46. [CMT Association](https://cmtassociation.org/) — Professional technical-analysis curriculum and research.
+47. [Elliott Wave International](https://www.elliottwave.com/) — Elliott Wave method and market-structure education.
+48. [Fibonacci.com](https://www.fibonacci.com/) — Background on Fibonacci concepts and applications.
+49. [Wyckoff Analytics](https://www.wyckoffanalytics.com/) — Wyckoff method, accumulation/distribution, and price-volume analysis.
+50. [The Chartist](https://www.thechartist.com.au/) — Technical-analysis education and chart commentary.
+51. [Stockopedia Guides](https://www.stockopedia.com/learn/) — Investment styles, screening, and chart-related concepts.
+52. [TradingSim Blog](https://www.tradingsim.com/blog/) — Trading concepts, setups, and historical simulation education.
+53. [Tradeciety](https://tradeciety.com/) — Price action, risk, and trading psychology education.
+54. [PriceAction.com](https://priceaction.com/) — Price-action concepts and chart reading.
+55. [No Nonsense Forex](https://nononsenseforex.com/) — Forex systems and indicator discussions; critically evaluate claims.
+56. [ThePatternSite](https://thepatternsite.com/) — Research-oriented coverage of classic chart patterns.
+57. [Bulkowski Pattern Research](https://www.thepatternsite.com/) — Statistics and historical studies of chart-pattern behavior.
+58. [TradingView Ideas](https://www.tradingview.com/ideas/) — Community chart examples; use as practice, not verified advice.
+59. [MarketChameleon](https://marketchameleon.com/) — Options statistics, volatility, and event-related analysis.
+60. [Option Alpha Education](https://optionalpha.com/learn) — Options strategy mechanics, probabilities, and risk.
+
+==============================================================================
+FUNDAMENTALS
+==============================================================================
+1. [SEBI Investor Education Material](https://investor.sebi.gov.in/iematerial.html) — Indian securities, IPOs, mutual funds, ETFs, derivatives, and investor safety.
+2. [NSE India](https://www.nseindia.com/) — Exchange filings, company announcements, indices, and market statistics.
+3. [BSE India](https://www.bseindia.com/) — Company announcements, financial results, and corporate actions.
+4. [SEBI Filings](https://www.sebi.gov.in/) — Regulatory filings, disclosures, circulars, and enforcement information.
+5. [MCA Company/LLP Services](https://www.mca.gov.in/) — Indian company filings, annual returns, and statutory records.
+6. [NSE Corporate Filings](https://www.nseindia.com/companies-listing/corporate-filings-announcements) — Listed-company announcements and disclosures.
+7. [BSE Corporate Announcements](https://www.bseindia.com/corporates/ann.html) — Company announcements and exchange disclosures.
+8. [Screener.in](https://www.screener.in/) — Indian-company financial statements, ratios, and screening.
+9. [Trendlyne](https://trendlyne.com/) — Indian stocks, financials, forecasts, ownership, and screening.
+10. [Tijori Finance](https://www.tijorifinance.com/) — Indian company fundamentals, segments, and industry data.
+11. [Moneycontrol Fundamentals](https://www.moneycontrol.com/) — Indian company financials, results, shareholding, and valuation.
+12. [Tickertape](https://www.tickertape.in/) — Indian equity screeners, financial metrics, and portfolio tools.
+13. [Value Research Online](https://www.valueresearchonline.com/) — Mutual funds, portfolio research, and investor education.
+14. [AMFI India](https://www.amfiindia.com/) — Indian mutual-fund industry data, NAVs, and investor resources.
+15. [RBI Database](https://dbie.rbi.org.in/) — Indian monetary, banking, inflation, and economic statistics.
+16. [RBI Publications](https://www.rbi.org.in/) — Monetary policy, financial stability, banking, and regulatory reports.
+17. [MOSPI](https://www.mospi.gov.in/) — Indian GDP, CPI, national accounts, and official statistics.
+18. [Department of Economic Affairs](https://dea.gov.in/) — Economic surveys, policy documents, and macroeconomic material.
+19. [India Budget](https://www.indiabudget.gov.in/) — Union Budget documents, receipts, expenditure, and fiscal policy.
+20. [NITI Aayog](https://www.niti.gov.in/) — Indian policy reports, sector analysis, and economic research.
+21. [CFA Institute Research and Policy Center](https://rpc.cfainstitute.org/) — Investment analysis, valuation, ethics, and professional research.
+22. [CFA Institute Financial Statement Analysis](https://www.cfainstitute.org/) — Financial-statement analysis and investment curriculum resources.
+23. [SEC EDGAR](https://www.sec.gov/edgar/search/) — US company annual reports, quarterly reports, and filings.
+24. [Investor.gov](https://www.investor.gov/) — Investor education, company research, funds, and fraud prevention.
+25. [FINRA Investor Education](https://www.finra.org/investors) — Brokerage, securities, fees, risk, and investor protection.
+26. [AnnualReports.com](https://www.annualreports.com/) — Company annual reports and historical filings archive.
+27. [Company IR Websites](https://www.nasdaq.com/market-activity/stocks) — Starting point to find listed-company investor-relations resources.
+28. [Morningstar](https://www.morningstar.com/) — Fund research, company analysis, ratings, and portfolio concepts.
+29. [Reuters Markets](https://www.reuters.com/markets/) — Global markets, company results, economic developments, and context.
+30. [Financial Times Markets](https://www.ft.com/markets) — Global financial markets, business fundamentals, and macro analysis.
+31. [The Wall Street Journal Markets](https://www.wsj.com/news/markets) — Markets, company performance, and economic reporting.
+32. [Yahoo Finance Financials](https://finance.yahoo.com/) — Company financial statements, valuation metrics, and earnings dates.
+33. [StockAnalysis.com Financials](https://stockanalysis.com/) — Financial statements, ratios, and company comparisons.
+34. [Macrotrends Financial Data](https://www.macrotrends.net/) — Long-term company financials, valuation, and macro series.
+35. [Koyfin](https://www.koyfin.com/) — Financial statements, estimates, valuation, and macro dashboards.
+36. [Finviz Fundamentals](https://finviz.com/) — US equity screening by valuation, growth, profitability, and ownership.
+37. [CompaniesMarketCap](https://companiesmarketcap.com/) — Market-cap rankings and company comparisons.
+38. [OpenCorporates](https://opencorporates.com/) — Cross-jurisdiction company registry information.
+39. [World Bank Data](https://data.worldbank.org/) — Country-level macroeconomic and development indicators.
+40. [IMF Data](https://www.imf.org/en/Data) — Global economic forecasts, country data, and financial statistics.
+41. [OECD Data](https://data.oecd.org/) — Cross-country economic, productivity, tax, and social indicators.
+42. [FRED Economic Data](https://fred.stlouisfed.org/) — US and international macroeconomic time series.
+43. [Bureau of Labor Statistics](https://www.bls.gov/) — US employment, inflation, wages, and productivity data.
+44. [US Bureau of Economic Analysis](https://www.bea.gov/) — US GDP, personal income, consumption, and national accounts.
+45. [US Treasury Fiscal Data](https://fiscaldata.treasury.gov/) — US government debt, receipts, spending, and fiscal statistics.
+46. [Federal Reserve](https://www.federalreserve.gov/) — US monetary policy, financial stability, and banking research.
+47. [European Central Bank](https://www.ecb.europa.eu/) — Euro-area monetary policy, inflation, and financial statistics.
+48. [Bank of England](https://www.bankofengland.co.uk/) — UK monetary policy, financial stability, and economic analysis.
+49. [Bank for International Settlements](https://www.bis.org/) — Global banking, credit, derivatives, and financial-stability research.
+50. [World Federation of Exchanges](https://www.world-exchanges.org/) — Global exchange statistics and market structure.
+51. [IOSCO](https://www.iosco.org/) — International securities regulation and investor-protection standards.
+52. [CFTC Learn & Protect](https://www.cftc.gov/LearnAndProtect) — US derivatives, futures, and commodity-market education.
+53. [Investor.gov: Researching Investments](https://www.investor.gov/introduction-investing) — Investment basics, products, risks, and research approaches.
+54. [SEC Company Search](https://www.sec.gov/edgar/search/) — Primary-source SEC filings for US-listed issuers.
+55. [FASB](https://www.fasb.org/) — US GAAP accounting standards and financial-reporting information.
+56. [IFRS Foundation](https://www.ifrs.org/) — International Financial Reporting Standards and accounting resources.
+57. [IAS Plus](https://www.iasplus.com/) — Accounting-standard updates and IFRS/US GAAP summaries.
+58. [Corporate Finance Institute](https://corporatefinanceinstitute.com/) — Accounting, financial modeling, valuation, and corporate finance.
+59. [Aswath Damodaran Online](https://pages.stern.nyu.edu/~adamodar/) — Valuation datasets, spreadsheets, and corporate-finance lectures.
+60. [AccountingCoach](https://www.accountingcoach.com/) — Accounting statements, ratios, and foundational accounting lessons.
+61. [Harvard Business Review Finance](https://hbr.org/topic/subject/finance) — Business strategy, company performance, and finance analysis.
+
+| # | Metric | Formula / what to inspect | Best / strong | Good | Moderate / investigate | Risky | Bad / red flag | Higher or lower: interpretation |
+|---:|---|---|---|---|---|---|---|---|
+| 1 | Revenue growth | `(Current revenue / Prior-period revenue) - 1`; separate organic growth, acquisitions, price, volume, FX and one-offs | Sustainable >15% annual growth with cash conversion and stable margins | 8–15% | 0–8% or volatile growth | Negative growth for 2+ years without a credible recovery plan | Persistent steep decline, especially with margin and cash-flow deterioration | Higher is generally better **only if profitable and cash-generative**; acquisition-led or credit-led growth can be poor quality |
+| 2 | Gross margin | `Gross profit / Revenue × 100` | High or improving versus comparable peers; often >40% in differentiated businesses | Around peer median or steadily improving | Below peer median or falling | Sharp unexplained decline; roughly >5 percentage-point fall over a year deserves investigation | Structurally weak versus peers with no scale/turnaround explanation | Higher is generally better; compare by industry—retail, distribution, manufacturing and software have very different norms |
+| 3 | Operating margin | `Operating profit / Revenue × 100`; state whether operating profit is EBIT or another definition | Top-quartile peer margin, stable/improving; >20% can be strong in many asset-light businesses | Above peer median and stable | Around peer median or volatile | Persistent decline, or materially below peers | Negative for a mature company without a credible temporary explanation | Higher is usually better if not created by underinvestment or accounting adjustments |
+| 4 | Net profit margin | `Net income / Revenue × 100` | Strong versus peers and supported by operating cash flow | Positive and near/above peer median | Thin, volatile, or far below operating margin without explanation | Repeatedly near zero or falling | Persistent net losses in a mature business, unexplained exceptional gains masking losses | Higher is usually better, but check interest, tax, one-offs and non-operating gains |
+| 5 | EBITDA margin | `EBITDA / Revenue × 100`; reconcile adjusted EBITDA to reported figures | Top-quartile peer margin and cash conversion | Above peer median | Around/below peer median or heavily adjusted | Large gap between adjusted and reported EBITDA | EBITDA repeatedly positive but operations consume cash and debt rises | Higher can be better, but EBITDA is **not cash flow** and ignores capex, working capital, interest and tax |
+| 6 | EBIT | Operating profit after depreciation and amortization | Positive, growing, and resilient through a cycle | Positive and broadly stable | Volatile or declining | Negative in a mature business | Persistent negative EBIT with no credible path to profitability | Higher is generally better; compare absolute EBIT only alongside revenue, assets and peers |
+| 7 | EPS growth | `(Current diluted EPS / Prior diluted EPS) - 1`; investigate negative/near-zero base effects | Multi-year growth supported by operations and cash | Positive, broadly tracks operating profit | Uneven or mostly buyback-driven | EPS growth while operating cash flow deteriorates | EPS depends on one-offs, aggressive adjustments, or shrinking diluted-share denominator alone | Higher is better only when earnings quality and share count are understood |
+| 8 | Cash flow from operations (CFO) | Operating cash flow from cash-flow statement | Positive in most years and tracks/reliably exceeds cumulative net income over time | Positive and broadly aligned with earnings | Volatile due to working capital or seasonality | Negative CFO in several periods while reported profit stays positive | Persistent negative CFO, overdue receivables, and rising borrowing despite profits | Higher/positive is generally better; examine multi-year cumulative CFO versus cumulative net income |
+| 9 | Free cash flow (FCF) | Common simplified form: `CFO - capital expenditure`; define capex consistently | Positive over most years, growing, with room to reinvest | Positive over the cycle | Near zero or volatile due to growth investment | Negative for several years without funding capacity or credible payoff | Persistent negative FCF, rising debt/dilution, and no credible route to returns | Higher is generally better, but negative FCF can be acceptable for a well-funded growth phase; separate maintenance from growth capex |
+| 10 | Cash conversion | `CFO / Net income`; use multi-year totals if net income is positive | Generally >1.0 over a multi-year period | Around 0.8–1.0 | Around 0.5–0.8 or highly volatile | Below 0.5 for several years | Negative CFO despite sustained positive net income | Higher is usually better; one year can be distorted by working capital, tax, or seasonality. N/M if net income is zero/negative |
+| 11 | Revenue quality | Check organic vs acquired growth, customer collections, returns, rebates, and contract terms | Recurring/contracted or repeat demand, transparent recognition, collections track sales | Mostly repeatable sales and ordinary terms | High customer/project concentration or volatile sales | Sales grow much faster than receivables; frequent extensions/returns | Aggressive recognition, channel stuffing allegations, unexplained receivables, restatements | More repeatable, collected revenue is better; growth alone is not enough |
+
+## 3. Liquidity, leverage, debt service and working capital
+
+| # | Metric | Formula / what to inspect | Best / strong | Good | Moderate / investigate | Risky | Bad / red flag | Higher or lower: interpretation |
+|---:|---|---|---|---|---|---|---|---|
+| 12 | Current ratio | `Current assets / Current liabilities` | Often 1.5–2.5 for a conventional operating company, with good-quality current assets | 1.2–1.5 | 1.0–1.2 | 0.8–1.0 | <0.8 with weak cash generation or near-term maturities | Higher can improve short-term cover, but an extremely high ratio can mean idle cash, slow inventory or uncollected receivables. Not suitable as a standalone bank metric |
+| 13 | Quick ratio | `(Cash + marketable securities + receivables) / Current liabilities`; definitions vary | Around 1.0 or higher for many conventional businesses | 0.8–1.0 | 0.6–0.8 | 0.4–0.6 | <0.4 with imminent obligations and weak CFO | Higher generally means better liquid cover; receivables quality matters |
+| 14 | Cash ratio | `(Cash + cash equivalents + short-term liquid investments) / Current liabilities` | Strong cash buffer relative to near-term needs | Adequate for business volatility | Thin cash buffer | Little cash and limited committed facilities | Cannot meet near-term obligations without refinancing or asset sales | Higher offers liquidity, but cash held for operations/restricted cash must be distinguished |
+| 15 | Debt-to-equity | `Total debt / Shareholders' equity`; state whether lease liabilities included | Low relative to peer norms; often <0.3 for non-financial companies | 0.3–0.7 | 0.7–1.0 | 1.0–2.0, depending on sector and cash stability | >2.0 can be severe for a conventional company, especially with weak cash flow | Lower is usually safer, but negative/very low equity makes the ratio misleading; banks/financial firms require sector-specific analysis |
+| 16 | Net debt / EBITDA | `(Interest-bearing debt - eligible cash) / EBITDA`; use consistent lease treatment | Net cash or <1.0× | 1.0–2.0× | 2.0–3.0× | 3.0–4.0× | >4.0× often high risk for a typical non-financial business; >5× is especially concerning without stable contracted cash flow | Lower is safer; negative EBITDA makes this N/M, not “good” |
+| 17 | Interest coverage | `EBIT / Interest expense` (some sources use EBITDA; label the definition) | >8× | 4–8× | 2–4× | 1–2× | <1×: operating earnings do not cover interest under this definition | Higher generally means more debt-service cushion; use EBIT-based coverage and cash-flow checks together |
+| 18 | Debt service coverage ratio (DSCR) | Cash available for debt service / scheduled principal + interest; definitions vary | >1.5× | 1.25–1.5× | 1.0–1.25× | 0.8–1.0× | <0.8× | Higher is safer; use the lender/covenant definition and assess forecast assumptions |
+| 19 | Net debt | `Debt - cash and cash equivalents` (confirm eligible cash) | Net cash or low net debt with robust FCF | Manageable versus FCF and maturities | Rising debt but funded investment plan | Debt rises while FCF weakens | Refinancing dependence, covenant pressure, or debt growth with deteriorating operations | Lower is generally safer; absolute amount alone is meaningless without EBITDA, FCF, interest and maturity schedule |
+| 20 | Working capital | `Current assets - Current liabilities`; inspect operating working capital separately | Funding cycle stable or improving without stressing suppliers | Normal for sector and growth | Increasing cash tied up in receivables/inventory | Working-capital needs grow faster than sales | Liquidity crisis, overdue payables, or repeated emergency borrowing | Positive is not automatically good; quality, turnover and cash conversion matter |
+| 21 | Receivable days (DSO) | Common form: `Average trade receivables / Revenue × 365`; use credit sales if available | Stable or falling and better than peer norms | Near peer norm and consistent with terms | Rising modestly or volatile | Increase of ~15–25% year-over-year without a clear reason | Very high vs peers/terms, overdue balances, write-offs or sales growth unsupported by collections | Lower is often better, but payment terms and business model differ; rising DSO is a warning |
+| 22 | Inventory days (DIO) | `Average inventory / Cost of goods sold × 365` | Stable/improving with no stock-outs | Normal for sector and product mix | Inventory grows faster than sales | Days rise ~15–25% year-over-year without planned stocking explanation | Obsolete stock, write-downs, falling sales and sharply rising days | Lower can be better, but too low may mean stock-outs; compare with seasonality and sector |
+| 23 | Payables days (DPO) | `Average trade payables / Purchases or COGS × 365`; formula choice matters | Sustainable terms and no supplier stress | Consistent with negotiated terms | Rising reliance on supplier credit | Material rise without stronger bargaining power or clear seasonality | Overdue payables, supplier disputes, supply interruptions | Higher improves near-term cash only if contractual and sustainable; extreme increases can signal distress |
+| 24 | Cash conversion cycle (CCC) | `DSO + DIO - DPO` | Short/negative where structurally possible and sustainable | Stable/improving vs peers | Long or lengthening cycle | Working capital consumes more cash each year | Severe deterioration plus liquidity stress | Lower is often better, but a negative CCC can be business-model-specific; never compare unrelated sectors blindly |
+| 25 | Debt maturity profile | Review principal by year, floating/fixed rates, currency, covenants and refinancing | Staggered maturities, ample cash/committed facilities, covenant headroom | Manageable maturities with credible cash coverage | Large maturity in next 12–24 months | Reliance on refinancing or asset sales | Imminent maturity without funding, covenant breach or default risk | More liquidity and longer staggered maturities are safer; there is no single universal ratio |
+
+## 4. Returns, efficiency and reinvestment
+
+| # | Metric | Formula / what to inspect | Best / strong | Good | Moderate / investigate | Risky | Bad / red flag | Higher or lower: interpretation |
+|---:|---|---|---|---|---|---|---|---|
+| 26 | ROE | `Net income / Average shareholders' equity × 100` | >20% sustained with moderate leverage and clean earnings | 15–20% | 8–15% | <8% for a mature business, or high ROE driven mainly by leverage | Negative/very low ROE with deteriorating operations; denominator distorted by negative equity | Higher can be good, but debt, buybacks, one-offs and low equity can inflate it |
+| 27 | ROIC | `NOPAT / Average invested capital × 100`; define invested capital consistently | Sustained ROIC > cost of capital by ~5 percentage points or more | ROIC > cost of capital | Near cost of capital (roughly within ±2 points) | Below cost of capital by >2 points for several years | Persistently negative returns on capital with no credible turnaround | Higher and above cost of capital is better; this is often more informative than ROE for operating businesses |
+| 28 | ROA | `Net income / Average total assets × 100`; sector-specific | Strong versus peers and stable through cycle | Around/above peer median | Below peer median | Falling with asset growth or asset-quality deterioration | Losses and impairments indicate assets are not earning adequate returns | Higher is usually better; banks, insurers, asset-heavy firms and software companies differ materially |
+| 29 | Asset turnover | `Revenue / Average total assets` | High/improving versus sector | Around/above peer median | Below peer median | Declining without a planned investment ramp | Assets expand but sales fail to follow over multiple years | Higher can indicate efficient asset use, but low-turnover businesses may have high margins |
+| 30 | Capital expenditure intensity | `Capex / Revenue × 100`; distinguish maintenance and growth capex | Capex earns attractive incremental returns and is funded safely | Sustainable relative to cash generation | High or volatile capex needing explanation | Capex materially exceeds internal cash generation for years | Repeated projects overrun, weak returns, and debt/dilution rise | Neither high nor low is inherently good; evaluate necessity, returns and funding |
+| 31 | Incremental ROIC | Change in NOPAT / change in invested capital over a suitable period; noisy measure | New capital earns well above cost of capital | Above cost of capital | Near cost of capital | Below cost of capital | Large investment with persistently negative incremental returns | Higher is better when measured consistently; can be distorted by acquisitions and cycle timing |
+| 32 | Diluted share-count growth | `(Current diluted shares / Prior diluted shares) - 1` | Flat or declining share count without weakening the balance sheet | Low dilution, e.g. <1% annually | 1–3% annually | 3–5% annually without corresponding value creation | Persistent high dilution with poor per-share growth | Lower dilution is generally better; employee compensation and acquisitions can be justified if returns exceed cost |
+| 33 | Dividend payout ratio | `Dividends / net income`; also check dividends / FCF | Sustainable payout with strong FCF; often 20–60% for mature non-financial firms | Covered by earnings and cash | 60–80% or volatile coverage | 80–100% with weak FCF | >100% sustained and funded by debt/asset sales | Lower gives flexibility; higher may be appropriate for mature, regulated or distribution-focused businesses |
+| 34 | Dividend yield | `Annual dividend per share / Share price × 100` | Sustainable yield compared with peers and total-return needs | Reasonable and cash-covered | Unusually high vs peers | Very high yield, e.g. >1.5–2× sector median, without cash support | Yield appears high because price collapsed and dividend is likely unsustainable | Higher is not automatically better; an extreme yield may be a value trap |
+| 35 | Buybacks | Review price paid, share-count reduction, funding source and management incentives | Repurchases below conservative intrinsic value, funded from surplus cash | Rational, transparent program | Neutral or small impact on per-share value | Debt-funded buybacks despite weak balance sheet | Buybacks at inflated prices while operations weaken or debt risk rises | No universal percentage threshold; judge price, funding, and share-count effect |
+
+## 5. Valuation multiples — lower is not always better
+
+**Valuation ratios must be compared with peers, growth, quality, interest rates, cyclicality and the company's own history.** A low multiple can indicate a bargain or a broken business; a high multiple can reflect quality or excessive optimism.
+
+| # | Metric | Formula | Potentially attractive / best zone | Moderate / fair zone | Risky / expensive zone | Bad / red-flag zone | Interpretation |
+|---:|---|---|---|---|---|---|---|
+| 36 | P/E | Share price / diluted EPS | Below peer/history median **while** earnings quality and growth are sound; often <15× may screen cheaply in some mature sectors | Around peer/history median | >1.5× peer median without stronger growth/quality | Very high multiple with deteriorating growth, or negative earnings incorrectly treated as a low P/E | No universal “good P/E.” P/E is N/M for negative EPS and unreliable at cyclical earnings peaks |
+| 37 | Forward P/E | Price / forecast next-12-month EPS | Discount to peers with credible forecasts | Near peers | Premium not justified by growth or quality | Forecasts require implausible earnings growth | Lower may be attractive only if forecasts are credible; analyst estimates can be wrong |
+| 38 | Price-to-book (P/B) | Market capitalization / book equity | Below peer/history median if assets are sound and returns are adequate | Near peer median | High P/B with weak ROE | High P/B with poor returns or questionable asset values | <1× is not automatically cheap; use especially carefully for banks/financials and asset-heavy firms |
+| 39 | Price-to-sales (P/S) | Market capitalization / annual revenue | Low versus peers with sustainable or improving margins | Around peer range | High multiple with weak margins | High multiple plus slowing growth and no path to profitability | Lower is not enough; two firms with identical sales can have very different margins and cash needs |
+| 40 | EV/EBITDA | Enterprise value / EBITDA | Below peer/history range with sustainable EBITDA and manageable capex/debt | Near peer range | Premium unsupported by growth/quality | Extreme multiple with falling EBITDA, or EBITDA is heavily adjusted | Lower can be attractive, but capital intensity, leases, working capital and cyclicality matter |
+| 41 | EV/EBIT | Enterprise value / EBIT | Discount to peers with sound assets and earnings | Near peers | Premium without superior returns | EBIT weak/negative or multiple is distorted by temporary peak/trough | Includes depreciation more directly than EV/EBITDA; still requires peer context |
+| 42 | PEG | P/E / expected annual EPS growth rate; conventions vary | Roughly <1 may screen attractively if growth estimate is reliable | Around 1–2 | >2 may imply a high price for expected growth | Very high PEG with slowing growth or unreliable forecasts | A rough heuristic only; not meaningful with negative/near-zero growth or inconsistent growth units |
+| 43 | FCF yield | FCF / market capitalization × 100; some use EV, so state denominator | >6–8% can be attractive for a stable business if FCF is sustainable | 3–6% | 0–3% | Negative FCF or a high yield caused by temporary/unsustainable cash flows | Higher can be attractive, but inspect capex cycles, working capital and whether cash flow is repeatable |
+| 44 | Earnings yield | EPS / share price × 100; inverse of P/E for positive EPS | High vs comparable alternatives, with reliable normalized earnings | Similar to peers/alternatives | Low yield without sufficient growth | Low yield plus deteriorating earnings | Higher may offer more earnings per price paid; compare with bond yields and risk |
+| 45 | EV/Sales | Enterprise value / revenue | Lower than comparable peers with similar margins and growth | Near peer range | High multiple without margin improvement | Extreme multiple with weak unit economics | Useful when earnings are negative, but debt and future margin potential must be examined |
+| 46 | PEG using normalized earnings | P/E based on mid-cycle EPS / normalized growth | Reasonable versus peers after normalizing cycle | Near peers | Expensive after normalization | Valuation depends on peak-cycle earnings | Particularly useful for cyclical firms; normalize earnings over a full cycle |
+
+## 6. Valuation methods and assumptions
+
+| # | Item | What to test | Best / strong | Moderate / investigate | Risky / bad |
+|---:|---|---|---|---|---|
+| 47 | Discounted cash flow (DCF) | Forecast FCF, discount rate, terminal growth, net debt, share count, dilution | Value remains above price across conservative/base scenarios; terminal value not dominating the result | Fair value depends heavily on one or two assumptions | Value only works with aggressive growth, falling discount rates, or unrealistic margins |
+| 48 | Comparable-company valuation | Select genuinely comparable firms; align fiscal years and metric definitions | Valuation discount with equal/better quality and returns | Similar to peers | Premium without superior growth, returns, balance sheet or durability |
+| 49 | Sum-of-the-parts (SOTP) | Value each segment separately; deduct corporate costs and net debt | Segment values supported by public evidence and conservative multiples | Wide range due to limited segment disclosure | Thesis relies on speculative values or ignores debt/corporate costs |
+| 50 | Margin of safety | `(Estimated intrinsic value - Price) / Estimated intrinsic value` | Often seek 25–40%+ for uncertain estimates or cyclical firms | 10–25% depending on quality and uncertainty | <10% leaves little protection | Not a precise universal rule; required margin should rise with uncertainty and downside risk |
+| 51 | Sensitivity analysis | Recalculate valuation across revenue, margin, discount rate and terminal assumptions | Reasonable value range under conservative assumptions | Wide but manageable range | Small assumption change destroys the investment case | If a small input change radically changes value, valuation uncertainty is high |
+| 52 | Terminal value share of DCF | `Terminal value / Total enterprise value in DCF` | Lower reliance, or terminal assumptions well justified | 60–75% requires careful review | >75% means valuation is highly assumption-sensitive | Not an automatic rejection, but very high dependence on distant forecasts reduces confidence |
+| 53 | Cost of capital | Estimate cost of equity and after-tax cost of debt; use appropriate capital weights | Forecast returns exceed cost of capital with a buffer | Returns near cost of capital | Returns below cost of capital | Growth destroys value when incremental returns remain below the relevant cost of capital |
+
+## 7. Accounting quality, governance and disclosures
+
+These are primarily **evidence-based tests**, not universal ratio thresholds. Do not assign a company a “good” score just because one ratio looks strong.
+
+| # | Item | Good / best evidence | Moderate / investigate | Risky / bad evidence |
+|---:|---|---|---|---|
+| 54 | Annual report | Consistent statements, clear segment disclosures, reconciled KPIs, candid risk discussion | Complex notes or repeated changes in presentation | Missing/late reports, unexplained restatements, opaque disclosures |
+| 55 | Auditor opinion | Unmodified opinion; still read key audit matters and qualifications | Emphasis-of-matter or significant uncertainty requiring explanation | Qualified, adverse or disclaimer opinion; auditor resignation with unresolved issues |
+| 56 | Related-party transactions | Transparent, ordinary-course, arm's-length terms, proper approvals | Material transactions requiring benchmarking | Unexplained loans/guarantees, unusual terms, repeated transfers benefiting insiders |
+| 57 | Promoter/founder ownership | Stable, aligned ownership with transparent transactions | Ownership changes with clear explanation | Sudden unexplained selling, opaque entities, governance concerns |
+| 58 | Promoter pledge (India) | 0% pledged shares is generally the cleanest starting point | Low, stable pledge with clear reason and ample collateral | Rising pledge or pledge near high levels | High or rapidly rising pledge plus falling share price, margin calls or disclosure concerns |
+| 59 | Institutional ownership | Diverse, disclosed ownership; changes understood in context | Concentrated ownership or rapid turnover | Crowded ownership used as sole investment thesis | More institutional ownership is not automatically good; ownership is context, not proof of quality |
+| 60 | Share dilution | Transparent ESOP/issuance with value creation per share | Moderate dilution tied to growth/acquisition | Persistent dilution without per-share progress | Large issuance at unfavourable prices or unexplained dilution |
+| 61 | Management guidance | Clear measurable guidance; history of meeting it or explaining misses | Frequent revisions with credible external causes | Repeated missed promises, changing definitions, selective metrics | Do not rely on promotional language without measurable delivery |
+| 62 | Earnings call | Specific quantified answers, reconciliation of changes, discussion of downside risks | Vague answers or limited data | Evasive answers, contradictions with filings, unexplained KPI changes | Read transcript alongside filings; confidence/tone is not evidence by itself |
+| 63 | Contingent liabilities | Material items disclosed, quantified, reasonably provided for | Outcome uncertain or amount material relative to equity/profit | Potential obligation could impair solvency or is poorly disclosed | Compare exposure with net worth, annual profit, cash and legal status; no universal safe amount |
+| 64 | Regulatory exposure | Current licences, compliance systems, clean material enforcement history | Pending cases or policy dependence with disclosed mitigation | Material licence, litigation, environmental, tax or compliance uncertainty | A single unresolved issue can outweigh otherwise attractive ratios |
+| 65 | Customer concentration | Diversified customers or long-term contracts with creditworthy buyers | Largest customer is material but manageable | One customer or small group drives a large share of revenue | Loss of one customer could threaten solvency or invalidate the business model |
+| 66 | Supplier concentration | Multiple viable suppliers or secure long-term arrangements | Dependence on a key input with mitigation | Single-source dependency with weak bargaining power | Disruption could halt production and no realistic substitute exists |
+| 67 | Macro / currency exposure | Stress-tested sensitivity and sensible hedging | Exposure disclosed but only partly mitigated | Large unhedged exposure relative to cash/profit | Adverse FX, rates, commodity or credit changes could threaten debt service |
+| 68 | ESG / material risks | Material financial risks measured and governed; evidence, not slogans | Data incomplete or transition plan uncertain | Material safety, environmental, labour or governance exposures unmanaged | Assess financially material risk and cash impact; avoid treating a generic ESG score as a complete answer |
+
+## 8. IPO, funds, bonds, REITs/InvITs and crypto — use product-specific metrics
+
+| # | Product / metric | Strong / good starting point | Moderate / investigate | Risky / bad | Notes |
+|---:|---|---|---|---|---|
+| 69 | IPO: use of proceeds | Specific, measurable productive use or debt reduction with transparent rationale | Mix of growth capex and general corporate purposes | Large offer-for-sale with little capital entering the company, or vague use of proceeds | An offer-for-sale is not automatically bad, but it does not fund the company |
+| 70 | IPO: valuation | Reasonable versus listed peers on normalized metrics, with transparent risk disclosures | Fair valuation with execution risks | Large premium with weaker growth/returns than peers | Read the offer document and risk factors; listing gains are not guaranteed |
+| 71 | Mutual fund: expense ratio | Low relative to the same category and service level | Around category median | High cost without evidence of a compensating benefit | Compare direct vs regular plans in India and like-for-like categories |
+| 72 | Index fund / ETF tracking difference | Small, persistent gap versus benchmark after costs | Moderate but explained gap | Consistently large gap vs comparable products | Tracking difference is usually more useful than a single-day tracking error |
+| 73 | ETF liquidity / spread | Tight bid-ask spread, sufficient depth and trading activity | Usable liquidity but check order size | Wide spread, thin order book, large premium/discount to NAV | Use limit orders where appropriate; displayed volume alone is not enough |
+| 74 | Bond: credit quality | Strong ability to pay, transparent covenants and acceptable spread for risk | Adequate coverage with some leverage | Weak coverage, refinancing dependence or covenant pressure | Higher yield compensates for risk; it is not a free extra return |
+| 75 | Bond: duration | Duration appropriate for investment horizon and rate-risk tolerance | Some mismatch accepted | Large duration exposure with near-term cash needs | Bond prices generally fall when market yields rise; duration approximates sensitivity |
+| 76 | Bond: yield spread | Spread justified by credit, liquidity and structure | Fair relative to comparable bonds | Low spread despite materially worse credit/liquidity | Compare similar currency, maturity, seniority, tax and liquidity |
+| 77 | REIT / InvIT: distribution coverage | Distribution supported by recurring distributable cash and disclosed calculation | Coverage adequate but sensitive to occupancy/rates | Distribution exceeds recurring cash generation | Read leverage, asset quality, tenant concentration, sponsor, refinancing and payout definitions |
+| 78 | Crypto/token: token unlocks | Transparent supply schedule, manageable unlocks and clear demand/utility | Material unlocks but disclosed and potentially absorbed | Large near-term unlocks versus circulating supply/liquidity | No universal safe percentage; quantify unlocks by date and holders |
+| 79 | Crypto/token: concentration | Broad and transparent ownership/validator/governance participation | Some concentration with clear controls | A few wallets/insiders can materially control supply or governance | Wallet labels may be incomplete; concentration metrics can be misleading |
+| 80 | Crypto protocol fundamentals | Audited code where appropriate, clear security model, credible usage/fees, transparent governance | Early adoption or incomplete revenue/usage history | Exploits, opaque control, unsustainable incentives, unclear custody or governance | Audits do not eliminate risk; assess smart contracts, bridges, admin keys and custody |
+
+## 9. Quick formula reference
+
+| Metric | Common formula | Interpretation |
+|---|---|---|
+| Revenue growth | `(Current revenue / Prior revenue) - 1` | Growth rate; investigate whether organic and cash-backed |
+| Gross margin | `Gross profit / Revenue` | Pricing, product mix and direct-cost efficiency |
+| Operating margin | `Operating profit / Revenue` | Core operating profitability |
+| Net margin | `Net income / Revenue` | Bottom-line profitability after interest/tax/other items |
+| Current ratio | `Current assets / Current liabilities` | Short-term balance-sheet coverage |
+| Quick ratio | `(Cash + short-term investments + receivables) / Current liabilities` | Liquidity excluding inventory and other less-liquid current assets |
+| Debt-to-equity | `Total debt / Shareholders' equity` | Balance-sheet leverage; misleading with negative equity |
+| Net debt / EBITDA | `(Debt - eligible cash) / EBITDA` | Approximate leverage relative to earnings; N/M if EBITDA is negative |
+| Interest coverage | `EBIT / Interest expense` | Earnings cushion over interest expense |
+| ROE | `Net income / Average equity` | Return to equity holders; can be inflated by leverage |
+| ROIC | `NOPAT / Average invested capital` | Operating return on capital invested |
+| ROA | `Net income / Average total assets` | Profitability relative to assets |
+| Operating cash conversion | `CFO / Net income` | Whether accounting profit converts into operating cash |
+| Free cash flow | `CFO - capex` | Cash after capital investment, under this simplified definition |
+| EPS | `Net income attributable to ordinary shareholders / Weighted-average diluted shares` | Earnings allocated per diluted share |
+| P/E | `Price per share / Diluted EPS` | Price paid per unit of earnings; N/M for negative EPS |
+| P/B | `Market capitalization / Book equity` | Price relative to accounting equity |
+| P/S | `Market capitalization / Annual revenue` | Price relative to sales; ignores margin quality |
+| EV/EBITDA | `Enterprise value / EBITDA` | Enterprise valuation relative to EBITDA |
+| PEG | `P/E / Expected annual EPS growth rate` | Heuristic; conventions vary and estimates are uncertain |
+| Dividend payout | `Dividends / Relevant earnings measure` | Share of earnings distributed |
+| FCF yield | `FCF / Market capitalization` (or EV; state which) | Free cash flow relative to price/value |
+| Margin of safety | `(Intrinsic value - Price) / Intrinsic value` | Discount to estimated value; depends on estimate quality |
+
+## 10. How to compare a company properly
+
+1. **Identify the sector and business model first.** Do not compare a bank with a software firm, a retailer with a utility, or a REIT with a manufacturer using the same thresholds.
+2. **Use consistent definitions.** Check whether debt includes leases, EBITDA is adjusted, cash is restricted, and EPS is diluted.
+3. **Compare three ways:** company versus peers, company versus its own 5–10-year history, and company versus its full business cycle.
+4. **Check trend, not only the latest value.** Improving from a weak base may be meaningful; a high current ratio at a cyclical peak may not be sustainable.
+5. **Cross-check the income statement with the balance sheet and cash-flow statement.** Revenue/profit growth without collections or cash generation deserves scrutiny.
+6. **Investigate extremes.** Very high ROE, very low P/E, very high dividend yield, very high growth, or unusually high margins may be real strengths—or signs of leverage, a cycle peak, a one-off, or a data problem.
+7. **Use a scorecard only after reading disclosures.** Ratios cannot replace annual reports, notes, auditor opinions, management commentary, debt maturities, or regulatory filings.
+8. **For India, verify primary sources** such as company filings on NSE/BSE, SEBI disclosures, annual reports, and relevant regulator publications. For global companies, use official exchange/regulator filings where possible.
+
+# IMPORTANT LIMITATIONS
+
+This is a learning directory, not investment advice. No pattern or indicator reliably predicts every market move. Confirm that a resource is still active and check licensing, pricing, jurisdiction, data delay, and terms of use. For India, use current SEBI/NSE/BSE/NISM/RBI materials for applicable regulations and exchange rules. For derivatives, understand contract specifications, margin, expiry, liquidity, and maximum loss before trading.
 
 This expansion adds a cross-topic master list of 50 learning websites, a 50-book reading library, and operational study frameworks for reading charts, analyzing companies, researching options chains, and testing strategies. The lists are learning references, not endorsements of any broker, product, trade, or investment outcome.
 
@@ -1869,28 +2504,9 @@ An automated system may ingest data, generate signals, propose/submit orders, mo
 - Do not rely on old blog posts for current rates, settlement cycles, margin rules, or algo-trading requirements.
 - Never disclose passwords, OTPs, private keys, seed phrases, or API secrets.
 - Be skeptical of guaranteed-return claims, paid tip groups promising certainty, fake apps, pump-and-dump activity, and requests to transfer funds to personal accounts.
-- Educational material here is not legal, tax, or investment advice.
 
-## Stage 20 — Practical learning sequence and deliverables
 
-| Sequence | Study focus | Required deliverable before moving on |
-|---|---|---|
-| 1 | Personal finance | Budget, emergency-reserve plan, compound-interest and inflation worksheet |
-| 2 | Economics | One-page macro dashboard with official data sources and release dates |
-| 3 | Math/statistics | Return, volatility, correlation, expected-value, and drawdown notebook |
-| 4 | Market mechanics | Order lifecycle, bid/ask, costs, and settlement explanation |
-| 5 | Investing | Written investment policy statement for a fictional case |
-| 6 | Indian equities | Company filing pack and corporate-action summary |
-| 7 | Fundamentals | Three-statement summary, ratios, footnote review, and risk note |
-| 8 | Valuation | DCF/comps model with assumptions and sensitivity table |
-| 9 | IPOs | Offer-document analysis with risks and proceeds breakdown |
-| 10 | Funds/bonds | Fund comparison and bond duration/rate-shock worksheet |
-| 11 | Technical analysis | 100 annotated charts and pre-defined pattern rules |
-| 12 | Derivatives/options | Payoff calculator with max loss, breakeven, and expiry behavior |
-| 13 | Options chain/volatility | Timestamped chain analysis and scenario Greeks notebook |
-| 14 | Quant research | Backtest with cost model, baseline, out-of-sample test, and limitations |
-| 15 | Automation | Paper-trading system with limits, logs, error handling, and kill switch |
-| 16 | Institutional research | Investment memo with thesis, counter-thesis, risk scenarios, and source trail |
+
 
 ## Final quality rule
 
