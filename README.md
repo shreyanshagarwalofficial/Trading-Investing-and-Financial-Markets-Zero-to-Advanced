@@ -2289,18 +2289,6 @@ A candle shows **open, high, low, and close** over a selected time interval. The
 | Realized volatility | Historical variability of returns over a defined window. | Compare current volatility with history and size risk. | Past volatility may not describe future tails. |
 | Implied volatility | Volatility input that makes a pricing model align with observed option price. | Compare option prices across strikes/expiries and scenarios. | It is model-derived, not a direct guarantee of future realized volatility. |
 
-### Text-only mini chart: a breakout hypothesis
-
-```text
-Price
-  ^
-  |                 /‾‾ possible follow-through
-  |       /\       /
-  |  /\  /  \_____/   <- resistance zone (area, not exact magic line)
-  | /  \/           \
-  |/                  \  <- possible false breakout
-  +---------------------------------> Time
-```
 
 This diagram illustrates two possible outcomes after a resistance test; it does not forecast which one will occur. A proper test must define the zone, confirmation, invalidation, position sizing, execution costs, and sample period before reviewing results.
 
